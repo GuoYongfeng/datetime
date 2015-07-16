@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>日期时间选择</title>
+    <script src="zepto.js" type="text/javascript"></script>
+    <script src="mobiscroll.zepto.js" type="text/javascript"></script>
+    <script src="mobiscroll.core.js" type="text/javascript"></script>
+    <script src="mobiscroll.scroller.js" type="text/javascript"></script>
+    <script src="mobiscroll.scroller.android.js" type="text/javascript"></script>
+    <script src="mobiscroll.datetime.js" type="text/javascript"></script>
+    <link href="mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+    <link href="mobiscroll.scroller.android.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        $(function () {
+
+            $('#txttest').scroller('destroy').scroller({
+                preset: 'datetime',
+                theme: 'android',
+                lang: 'zh',
+            });
+ 
+        });
+    </script>
+</head>
+
+<body>
+    <div class="demo demo-date demo-datetime demo-time demo-credit">
+        <label for="test">点击下面文本框</label>
+        <input name="test" id="txttest" class="demo-test-date demo-test-datetime demo-test-time demo-test-credit" />
+    </div>
+</body>
+</html>
+

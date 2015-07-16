@@ -11,4 +11,4 @@
         useShortLabels: true
     };
 
-})(jQuery);
+})(Zepto);
